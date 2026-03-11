@@ -6,5 +6,6 @@ div {
 }
 img{
     position: absolute;
+    height: 10%;
     transform: translate(-50%, -50%);
 }
