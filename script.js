@@ -6,9 +6,9 @@ function myFunction(e) {
   document.getElementById("image").src = "moutains.jpg";
 }
 
-function drift(x,y) {
-  let nX = x + 100;
-  let nY = y + 100;
+function drift() {
+  let nX = e.clientX + 100;
+  let nY = e.clientY + 100;
   $("img").css("top", nY + "px");
   $("img").css("left", nX + "px");
 }
@@ -19,7 +19,7 @@ $(document).ready(function () {
     let y = e.clientY;
     $("img").css("top", y + "px");
     $("img").css("left", x + "px");
-    // window.setTimeout(drift(x,y),20000);
+    window.setInterval(drift,5000);
   });
 });
 
