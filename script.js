@@ -8,5 +8,14 @@ function myFunction(e) {
 
 function clearCoor() {
   document.getElementById("demo").innerHTML = "";
-  document.getElementById("image").src = "";
+//   document.getElementById("image").src = "";
 }
+
+$(document).ready(function () {
+  $(document).mousemove(function (e) {
+    let x = e.clientX;
+    let y = e.clientY;
+    $('img').css("top", y+ "px");
+    $('img').css("left", x + "px");
+  });
+});

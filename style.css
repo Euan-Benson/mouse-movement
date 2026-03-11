@@ -1,11 +1,12 @@
+body{
+    cursor: none;
+}
 div {
   width: 400px;
   height: 300px;
   border: 1px solid black;
-  /* cursor: none; */
 }
-img{
-    position: absolute;
-    height: 10%;
-    transform: translate(-50%, -50%);
+img {
+  position: absolute;
+  height: 5%;
 }
