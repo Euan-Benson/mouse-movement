@@ -3,6 +3,9 @@ function myFunction(e) {
   let y = e.clientY;
   let coor = "Coordinates: (" + x + "," + y + ")";
   document.getElementById("demo").innerHTML = coor;
+
+  $('img').css('left', e.pageX+"px");
+  $('img').css('top', e.pageY+"px");
 }
 
 function clearCoor() {

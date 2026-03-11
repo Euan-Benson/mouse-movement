@@ -2,5 +2,9 @@ div {
   width: 400px;
   height: 300px;
   border: 1px solid black;
-  cursor: none;
+  /* cursor: none; */
+}
+img{
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
