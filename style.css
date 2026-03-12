@@ -1,12 +1,21 @@
 body {
-  /* cursor: none; */
+  cursor: none;
 }
 div {
   width: 400px;
   height: 300px;
   border: 1px solid black;
+  z-index: -1;
 }
 img {
   position: absolute;
   height: 5%;
+}
+#popup {
+  width: 100px;
+  height: 70px;
+  border: 1px solid black;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }

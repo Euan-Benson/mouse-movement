@@ -20,28 +20,27 @@ let x = 0,
   dirX = 1,
   dirY = 1;
 const speed = 2;
-let dvd = document.getElementById("image");
-const dvdWidth = dvd.clientWidth;
-const dvdHeight = dvd.clientHeight;
+let image = document.getElementById("popup");
+const imageWidth = image.clientWidth;
+const imageHeight = image.clientHeight;
 
 function animate() {
   const screenHeight = document.body.clientHeight;
   const screenWidth = document.body.clientWidth;
 
-  if (y + dvdHeight >= screenHeight || y < 0) {
+  if (y + imageHeight >= screenHeight || y < 0) {
     dirY *= -1;
   }
-  if (x + dvdWidth >= screenWidth || x < 0) {
+  if (x + imageWidth >= screenWidth || x < 0) {
     dirX *= -1;
   }
   x += dirX * speed;
   y += dirY * speed;
-  dvd.style.left = x + "px";
-  dvd.style.top = y + "px";
+  image.style.left = x + "px";
+  image.style.top = y + "px";
   window.requestAnimationFrame(animate);
+  document.getElementById("image").src = "";
 }
 
 setTimeout(animate,10000);
-
-dvd.addEventListener("click", animate);
 
