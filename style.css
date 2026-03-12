@@ -1,5 +1,7 @@
 body {
-  cursor: none;
+ cursor: default;
+  width: 100vh;
+  height: 100vh;
 }
 div {
   width: 400px;
