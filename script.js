@@ -46,6 +46,10 @@ function stopAnimation(e) {
   speed = 0;
 }
 
+function startAnimation(e){
+    speed = 2;
+}
+
 function showMouse(e) {
   $("body").css("cursor", "default");
 }
