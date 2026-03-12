@@ -44,10 +44,10 @@ function animate() {
 
 function stopAnimation(e) {
   speed = 0;
-  //document.getElementById("image").src = "moutains.jpg";
-  //   document.body.appendChild(cursor);
-  $("body").css("cursor", "default");
-  //   console.log(document.getElementById("image").src);
 }
 
-setTimeout(animate, 5000);
+function showMouse(e) {
+  $("body").css("cursor", "default");
+}
+
+setInterval(animate, 5000);
