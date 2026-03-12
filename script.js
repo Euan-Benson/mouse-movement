@@ -39,13 +39,13 @@ function animate() {
   popup.style.left = x + "px";
   popup.style.top = y + "px";
   window.requestAnimationFrame(animate);
-  $("body").css("cursor", "none");
   //   document.getElementById("image").src = "";
 }
 
 function stopAnimation(e) {
   speed = 0;
   //document.getElementById("image").src = "moutains.jpg";
+  //   document.body.appendChild(cursor);
   $("body").css("cursor", "default");
   //   console.log(document.getElementById("image").src);
 }

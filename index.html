@@ -1,18 +1,14 @@
 <!doctype html>
 <html lang="en-gb">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Home page for Boilerplate website" />
-    <title>mouse move</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
-  <body onmousemove="myFunction(event)" oncontextmenu="stopAnimation(event)">
+  <body onmousemove="myFunction(event)">
     <h1>onMouseMove</h1>
 
-    <div></div>
-    <div id="popup"><p id="demo"></p></div>
+    <!-- <div></div> -->
+    <div id="popup" onclick="stopAnimation(event)"><p id="demo"></p></div>
 
     <!-- <img id="image" src="moutains.jpg" /> -->
     <script src="script.js"></script>
